@@ -1,0 +1,41 @@
+@import './partials/variables';
+
+.bg-accent {
+    background-color: $accent;
+}
+
+.transformed {
+    transform: rotate(180deg);
+}
+
+.navbar-position {
+    position: fixed;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+
+.custom-fw {
+    font-size: 20px;
+}
+
+@media only screen and (min-width: 768px) {
+    .navbar-position {
+        top: 0;
+        bottom: auto;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .profile {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .custom-fw {
+        font-size: 16px;
+    }
+}
