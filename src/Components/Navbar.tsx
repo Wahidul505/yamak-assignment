@@ -13,10 +13,10 @@ const Navbar = () => {
                 <BsPersonFill className='fs-2 bg-accent rounded-circle p-1' />
             </a>
             <ul className="dropdown-menu">
-                <li><a className="dropdown-item" href="/">Profile</a></li>
-                <li><a className="dropdown-item" href="/">Settings</a></li>
+                <li><span className="dropdown-item">Profile</span></li>
+                <li><span className="dropdown-item">Settings</span></li>
                 <li><hr className="dropdown-divider" /></li>
-                <li><a className="dropdown-item" href="/">Sign out</a></li>
+                <li><span className="dropdown-item">Sign out</span></li>
             </ul>
         </span>
     </>
