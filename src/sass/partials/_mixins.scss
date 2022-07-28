@@ -1,0 +1,12 @@
+@mixin primary-button {
+    height: 40px;
+    background-color: #0275d8;
+    padding: 5px 15px;
+    color: white;
+    border: none;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+}

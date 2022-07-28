@@ -1,5 +1,5 @@
 import React from 'react';
-import '../sass/styles.scss';
+import '../../sass/Navbar.scss';
 import { BsArrowCounterclockwise } from 'react-icons/bs';
 import { BsPersonFill } from 'react-icons/bs';
 import { MdOutlineArrowBackIos } from 'react-icons/md';
@@ -22,26 +22,28 @@ const Navbar = () => {
     </>
     return (
         <nav>
-            <div className="navbar-position bg-white shadow-lg px-lg-5 px-1 py-3 d-flex">
+            <div className="navbar-position bg-white shadow px-lg-5 px-1 py-3 d-flex">
                 <div className='d-none d-md-block'>
                     <h2 className='fw-bold'><span className='text-primary'>Yamak</span>.ai</h2>
                 </div>
                 <div className='d-block d-md-none position-fixed top-0 start-0 p-2'>
                     <span><MdOutlineArrowBackIos className='bg-accent text-white rounded-circle p-1 fw-bold fs-1' /></span>
                 </div>
-                <div className='d-flex gap-lg-4 gap-3 text-secondary custom-fw justify-content-center justify-content-md-end w-100'>
+                <div className='d-flex gap-lg-4 gap-md-2 gap-3 text-secondary custom-fw justify-content-center justify-content-md-end w-100'>
                     <span>Home</span>
                     <span>Marketing</span>
-                    <span>Social Media</span>
+                    <span className='text-accent'>Social Media</span>
                     <span>Sales Copy</span>
                     <span>Blogs</span>
                     <span>Others</span>
-                    <div className='d-none d-md-flex gap-lg-4 gap-3'>
+                    <div className='d-none d-md-flex gap-2'>
                         {profile}
                     </div>
                 </div>
             </div>
-            <div className='position-fixed top-0 end-0 d-md-none p-3'>
+            <div
+                style={{zIndex:'10'}}
+                className='position-fixed top-0 end-0 d-md-none p-3'>
                 {profile}
             </div>
         </nav>

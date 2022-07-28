@@ -4,6 +4,10 @@
     background-color: $accent;
 }
 
+.text-accent{
+    color: $accent;
+}
+
 .transformed {
     transform: rotate(180deg);
 }
@@ -13,6 +17,7 @@
     right: 0;
     left: 0;
     bottom: 0;
+    z-index: 10;
 }
 
 .custom-fw {
