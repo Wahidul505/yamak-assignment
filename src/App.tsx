@@ -1,11 +1,17 @@
-import React from 'react';
+import React, { FC } from 'react';
 import Home from './Components/Home/Home';
 import Navbar from './Components/Navbar/Navbar';
-function App() {
+import { Toaster } from 'react-hot-toast';
+
+const App: FC = () => {
   return (
     <div>
       <Navbar />
       <Home />
+      <Toaster
+        position="top-center"
+        reverseOrder={false}
+      />
     </div>
   );
 }
