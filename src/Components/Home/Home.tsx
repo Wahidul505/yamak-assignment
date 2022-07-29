@@ -11,7 +11,7 @@ const Home = () => {
     const [fontColor, setFontColor] = useState<string>('black');
 
     return (
-        <div className="home px-2 px-md-4">
+        <div className="home px-3 px-md-4">
             <header className='d-flex justify-content-between gap-2'>
                 <h2>Home/Note Assistant</h2>
                 <div className='d-flex gap-3'>
