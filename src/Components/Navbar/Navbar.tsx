@@ -29,13 +29,13 @@ const Navbar = () => {
                 <div className='d-block d-md-none position-fixed top-0 start-0 p-2'>
                     <span><MdOutlineArrowBackIos className='bg-accent text-white rounded-circle p-1 fw-bold fs-1' /></span>
                 </div>
-                <div className='d-flex gap-lg-4 gap-md-2 gap-2 text-secondary custom-fs justify-content-center justify-content-md-end w-100'>
-                    <span>Home</span>
-                    <span>Marketing</span>
-                    <span className='text-accent'>Social Media</span>
-                    <span>Sales Copy</span>
-                    <span>Blogs</span>
-                    <span>Others</span>
+                <div className='d-flex gap-lg-4 gap-md-2 gap-3 text-secondary custom-fs justify-content-center justify-content-md-end w-100'>
+                    <span className='text-center'>Home</span>
+                    <span className='text-center'>Marketing</span>
+                    <span className='text-center text-accent'>Social Media</span>
+                    <span className='text-center'>Sales Copy</span>
+                    <span className='text-center'>Blogs</span>
+                    <span className='text-center'>Others</span>
                     <div className='d-none d-md-flex gap-2'>
                         {profile}
                     </div>
