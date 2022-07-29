@@ -2,6 +2,7 @@ import React, { FC } from 'react';
 import Home from './Components/Home/Home';
 import Navbar from './Components/Navbar/Navbar';
 import { Toaster } from 'react-hot-toast';
+import './sass/App.scss';
 
 const App: FC = () => {
   return (

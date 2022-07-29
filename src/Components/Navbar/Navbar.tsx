@@ -29,7 +29,7 @@ const Navbar = () => {
                 <div className='d-block d-md-none position-fixed top-0 start-0 p-2'>
                     <span><MdOutlineArrowBackIos className='bg-accent text-white rounded-circle p-1 fw-bold fs-1' /></span>
                 </div>
-                <div className='d-flex gap-lg-4 gap-md-2 gap-3 text-secondary custom-fw justify-content-center justify-content-md-end w-100'>
+                <div className='d-flex gap-lg-4 gap-md-2 gap-2 text-secondary custom-fs justify-content-center justify-content-md-end w-100'>
                     <span>Home</span>
                     <span>Marketing</span>
                     <span className='text-accent'>Social Media</span>

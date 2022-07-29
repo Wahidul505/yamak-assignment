@@ -14,7 +14,7 @@ const TextArea: FC<Props> = ({ fontSize, fontColor, note, setNote }) => {
     const [words, setWords] = useState<number>();
     const [characters, setCharacters] = useState<number>();
     useEffect(() => {
-        if (!fontSize || fontSize < 12 || fontSize > 32) {
+        if (!fontSize || fontSize < 16 || fontSize > 40) {
             toast.error('Please enter a valid font size between 12px to 32px', { id: 'fontsize-error' });
             setDisable(true);
         }
@@ -51,6 +51,7 @@ const TextArea: FC<Props> = ({ fontSize, fontColor, note, setNote }) => {
                 disabled={disable}
                 maxLength={250}
                 value={note}
+                placeholder="Add Note from here"
                 style={{ fontSize: `${fontSize}px`, color: `${fontColor}` }}
                 className='rounded-bottom px-4'></textarea>
         </div>

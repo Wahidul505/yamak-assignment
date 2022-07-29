@@ -17,7 +17,7 @@ const CreateNote: FC<Props> = ({ note, setNote, fontColor, setFontColor, fontSiz
     return (
         <div className='pe-md-4 my-4 create-note position-relative'>
             <span><MdOutlineArrowBackIos className='bg-white rounded-circle p-1 fw-bold fs-2 arrow-btn d-none d-md-block' /></span>
-            <Options setFontSize={setFontSize} setFontColor={setFontColor} />
+            <Options fontSize={fontSize} fontColor={fontColor} setFontSize={setFontSize} setFontColor={setFontColor}/>
             <TextArea fontSize={fontSize} fontColor={fontColor} note={note} setNote={setNote} />
         </div>
     );

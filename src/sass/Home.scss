@@ -3,7 +3,7 @@
 .home {
     margin-top: 120px;
 
-    .notes-container{
+    .notes-container {
         display: grid;
         grid-template-columns: 3fr 2fr;
     }
@@ -11,27 +11,35 @@
     .home-btn {
         @include primary-button;
     }
-    .font-size-input{
+
+    .font-size-input {
         width: 50px;
         height: 30px;
     }
-    textarea{
+
+    textarea {
         min-height: 75vh;
         width: 100%;
         border: none;
-        &:focus{
+
+        &:focus {
             outline: none;
         }
     }
-    .create-note{
+
+    .create-note {
         border-right: 2px solid gray;
-        .arrow-btn{
-            position: absolute;
-            right: 0;
+
+        .arrow-btn {
+            @include positioned(absolute, 70px, 0px, auto, auto);
             transform: translate(17px);
-            top: 70px;
             cursor: pointer;
         }
+    }
+
+    .selected-note {
+        transform: scale(100%);
+        animation: zoom 2s linear 0s 1;
     }
 }
 
@@ -39,14 +47,31 @@
     .home {
         margin-top: 70px;
         margin-bottom: 100px;
-        textarea{
+
+        textarea {
             min-height: 50vh;
         }
-        .notes-container{
+
+        .notes-container {
             display: block;
         }
-        .create-note{
+
+        .create-note {
             border: none;
         }
+    }
+}
+
+@keyframes zoom {
+    0% {
+        transform: scale(100%);
+    }
+
+    50% {
+        transform: scale(110%);
+    }
+
+    100% {
+        transform: scale(100%);
     }
 }

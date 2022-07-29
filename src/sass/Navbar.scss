@@ -1,46 +1,38 @@
 @import './partials/variables';
+@import './partials/mixins';
 
-.bg-accent {
-    background-color: $accent;
-}
 
-.text-accent{
-    color: $accent;
-}
+nav {
+    .transformed {
+        transform: rotate(180deg);
+    }
 
-.transformed {
-    transform: rotate(180deg);
-}
+    .navbar-position {
+        @include positioned(fixed, auto, 0px, 0px, 0px);
+        z-index: 10;
+    }
 
-.navbar-position {
-    position: fixed;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    z-index: 10;
-}
-
-.custom-fw {
-    font-size: 20px;
+    .custom-fs {
+        font-size: 20px;
+    }
 }
 
 @media only screen and (min-width: 768px) {
-    .navbar-position {
-        top: 0;
-        bottom: auto;
+    nav {
+        .navbar-position {
+            @include positioned(fixed, 0px, 0px, auto, 0px);
+        }
     }
 }
 
 @media only screen and (max-width: 768px) {
-    .profile {
-        position: fixed;
-        top: 20px;
-        right: 20px;
-    }
-}
+    nav {
+        .profile {
+            @include positioned(fixed, 20px, 20px, auto, auto);
+        }
 
-@media only screen and (max-width: 768px) {
-    .custom-fw {
-        font-size: 16px;
+        .custom-fs {
+            font-size: 15px;
+        }
     }
 }
